@@ -1,20 +1,21 @@
 {
   "name": "banconode",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "main": "index.mjs",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . && prettier --write \"**/*.{js,json}\"",
-    "format": "prettier --write \"**/*.{js,json}\""
+    "format": "prettier --write \"**/*.{js,json}\"",
+    "build": "echo \"Build process not specified\""
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
     "mysql2": "^3.11.0"
   },
   "devDependencies": {
@@ -30,8 +31,7 @@
       "node": true
     },
     "parserOptions": {
-      "ecmaVersion": 2020,
-      "sourceType": "module"
+      "ecmaVersion": 2020
     },
     "extends": [
       "eslint:recommended",

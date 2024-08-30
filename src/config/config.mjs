@@ -1,8 +1,8 @@
-const config = {
+export const config = {
   host: 'localhost',
   user: 'root',
   password: 'password',
   database: 'motoacademy',
 };
 
-module.exports = config;
+export default config;
